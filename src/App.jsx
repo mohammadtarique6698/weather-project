@@ -19,13 +19,13 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      setTimeout(() => {
-        window.location.href = "/weather";
-      }, 100);
-    }
-  }, [isAuthenticated]);
+  // useEffect(() => {
+  //   if (isAuthenticated) {
+  //     setTimeout(() => {
+  //       window.location.href = "/weather";
+  //     }, 100);
+  //   }
+  // }, [isAuthenticated]);
 
   const handleLoginSuccess = (credentialResponse) => {
     setIsAuthenticated(true);
