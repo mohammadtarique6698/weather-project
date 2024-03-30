@@ -5,7 +5,7 @@ import Weather from "./Weather.jsx";
 import Footer from "./Footer.jsx";
 
 const Navigation = () => {
-  const getData = JSON.parse(localStorage.getItem("userData"));
+  const getData = JSON.parse(localStorage.getItem("userData" || "[]"));
 
   const name = {
     name: getData.given_name + " " + getData.family_name,
