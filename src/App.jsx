@@ -99,9 +99,9 @@ const App = () => {
             </div>
           </div>
         )}
-      </div>
 
-      <Navigation />
+        <Navigation />
+      </div>
     </SnackbarProvider>
   );
 };
