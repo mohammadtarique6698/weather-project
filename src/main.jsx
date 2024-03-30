@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/weather",
-        element: (props) => <Navigation />,
+        element: <Navigation />,
       },
     ],
   },
