@@ -99,6 +99,7 @@ const App = () => {
             </div>
           </div>
         )}
+        {isAuthenticated && <Navigation />}
       </div>
     </SnackbarProvider>
   );
