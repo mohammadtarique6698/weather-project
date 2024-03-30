@@ -1,37 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import App from "./App.jsx";
 import "./index.css";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-//import Navigation from "./Components/Navigation.jsx";
-import { StateContextProvider } from "./assets/Context/index.jsx";
+import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
 import { SnackbarProvider } from "notistack";
+import { StateContextProvider } from "./assets/Context/index.jsx";
 import Navigation from "./Components/Navigation.jsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/weather",
-        element: <Navigation />,
-      },
-    ],
-  },
-  // {
-  //   path: "/",
-  //   element: <Navigation />,
-  // },
-]);
-
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.render(
   <React.StrictMode>
     <SnackbarProvider>
       <StateContextProvider>
-        <RouterProvider router={router} />
+        <BrowserRouter>
+          {" "}
+          {/* Use BrowserRouter */}
+          <App />
+          <Navigation />
+        </BrowserRouter>
       </StateContextProvider>
     </SnackbarProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
