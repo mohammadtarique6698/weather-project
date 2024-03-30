@@ -9,6 +9,7 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Navigation from "./Components/Navigation";
 
 const CLIENT_ID =
   "72763305888-92mmqjcjv6biv2eghabkq9qat0jhlvlc.apps.googleusercontent.com";
@@ -99,6 +100,8 @@ const App = () => {
           </div>
         )}
       </div>
+
+      <Navigation />
     </SnackbarProvider>
   );
 };
