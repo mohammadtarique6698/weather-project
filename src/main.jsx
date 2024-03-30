@@ -7,11 +7,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //import Navigation from "./Components/Navigation.jsx";
 import { StateContextProvider } from "./assets/Context/index.jsx";
 import { SnackbarProvider } from "notistack";
+import Navigation from "./Components/Navigation.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/weather",
+        element: <Navigation />,
+      },
+    ],
   },
   // {
   //   path: "/",
