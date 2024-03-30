@@ -15,6 +15,8 @@ const Navigation = () => {
     name: fullName,
   };
 
+  console.log(name);
+
   return (
     <div>
       <Header name={name} />
