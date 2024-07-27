@@ -68,7 +68,7 @@ const Header = ({ name }) => {
       <div className="flex justify-between items-center p-4 px-16">
         <div>
           <h3 className="font-bold text-xl">
-            <a href="https://www.linkedin.com/company/turinix/">Turinix</a>
+            <a href="/">Weatherly</a>
           </h3>
         </div>
 
